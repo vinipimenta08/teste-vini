@@ -21,7 +21,7 @@ class UserController extends Controller
     {
         $users = Users::all();
 
-        return response()->json($users);
+        return response()->json(LibraryController::responseApi($users, 'ok'));
     }
 
     /**
